@@ -16,7 +16,8 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start', 'help'])
 async def send_welcome(message: types.Message):
     await message.reply(
-        f"Hi,{message.from_user.full_name}!\nIt's my first BOT.I want to give information by car number")
+                        f"Hi,{message.from_user.full_name}!\n"
+                        f"It's my first BOT.I want to give information by car number")
 
 
 @dp.message_handler()
