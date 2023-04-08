@@ -19,7 +19,6 @@ async def send_welcome(message: types.Message):
                         f"Hi,{message.from_user.full_name}!\n"
                         f"It's my first BOT.I want to give information by car number")
 
-
 @dp.message_handler()
 async def echo(message: types.Message):
     number = message.text.upper()
