@@ -3,7 +3,11 @@ import requests
 
 from aiogram import Bot, Dispatcher, executor, types
 
-from config import API_TOKEN, KEY
+# from config import API_TOKEN, KEY
+import os
+
+API_TOKEN = os.getenv("API_TOKEN")
+KEY = os.getenv("KEY")
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
